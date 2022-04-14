@@ -68,25 +68,52 @@ h2{
 section{
   float: left;
 }
-footer{
-    background-color: grey;
-  width: auto;
-  border: 1.5px;
-  padding:50px;
-  margin: 2px;
-  }
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
+}
+
+#footer{
+  background-color: grey;
+  float: left;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  margin-left: auto;
+}
+.box{
+  height: 300px;
+  width: 300px;
+}
+.container{
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 </style>
 <title>Kitties to go</title>
 </head>
 <body>
+
+  <div id="page-container">
+    <div id="content-wrap">
+      <!-- all other page content -->
 <header class="headerCats">
-  <h1>Kitties to go</h1>
-<h2><i> Seattles Premier Drive-Thru Cat Rentals</i></h2>
+  <h1>Kitties to go<h1>
+<h2><i> Seattles Premier Drive-Thru Cat Rentals</i><h2>
 </header>
 <nav>
   <ul>
-      <li><a href="">About</a></li>
+    <ul>
+      <li><a href="file:///C:/Users/Calum/OneDrive/Desktop/Front%20End/html100/assign4/Assignment-4-p1.html">About</a></li>
       <li><a href="">Rates</a></li>
       <li><a href="">Liability Release</a></li>
       <li><a href="">Kitty Profiles</a></li>
@@ -94,17 +121,16 @@ footer{
     </ul>
 </nav>
 <header>
-<article>
-  <section class="Sec1">
+<article class="Sec1">
     <h2>Cat ipsum dolor sit amet, find something else more interesting, so
 catty ipsum mesmerizing birds sleep on my human’s head.</h2>
     <p>Cat ipsum dolor sit amet, find something else more interesting, so catty ipsum mesmerizing birds
 sleep on my human’s head. Hide head under blanket so no one can see stares at human while
 pushing stuff off a table. Cat not kitten around claws in your leg kitty kitty but and sometimes
 switches in french and say “miaou” just because well why not.</p>
-    <h3>Please stop looking at your phone an pet me. Lounge in the
+    <h2>Please stop looking at your phone an pet me. Lounge in the
 doorway eat and then sleep on your face meowwww meowwww
-– Jeremy</h3>
+– Jeremy<h3>
   <h2>The Kitties to Go Story</h2>
   <p>Fall asleep on the washing machine snuggles up to shoulders or knees and purrs you to sleep.
 Eat prawns daintily with a claw then lick paws clean wash down prawns with a lap of carnation milk
@@ -114,7 +140,6 @@ meant to do that now i shall wash myself intently cough and swat at dog.
 Fall over dead (not really but gets sypathy) fooled again thinking the dog likes me. Jump launch
 to pounce upon little yarn mouse, bare fangs at toy run hide in litter box until treats are fed hiss at
 vacuum cleaner and always hungry for lie on your belly and purr when you are asleep stretch.</p>
-  </section>
 </article>
 </header>
 <aside>
@@ -138,10 +163,12 @@ purr purr purr purr.
 </p>
 </aside>
 <p>cats footer</p>
-<section>
-<footer>
+
+<footer id="footer">
   <img src="https://raw.githubusercontent.com/UWFront-End-Cert/starters/master/lesson04-mock5-cat-logo.png"
-  alt="A Logo">
+  alt="A Logo"
+  width="100%"
+  height="2rem">
   <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex
 esseque invenienihil imaximu scideru ptistiusam consequun</p>
   <nav>
@@ -154,7 +181,7 @@ esseque invenienihil imaximu scideru ptistiusam consequun</p>
 </nav>
   <small>&copy; 2018 Kitties to Go, LLC Seattle, WA</small>
 </footer>
-</section>
+
 
 </body>
 </html>
